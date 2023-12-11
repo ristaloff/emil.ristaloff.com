@@ -1,0 +1,26 @@
+/* RGB */
+$color1: rgba(255, 255, 255, 1);
+$color2: rgba(0, 23, 31, 1);
+$color3: rgba(0, 52, 89, 1);
+$color4: rgba(0, 126, 167, 1);
+$color5: rgba(0, 168, 232, 1);
+
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .parent {
+    position: relative;
+  }
+  .child {
+    @include centerer;
+  }
+  
+body {
+    background-color: $color3; 
+    font-size: 20px;
+    color: $color5;
+}
